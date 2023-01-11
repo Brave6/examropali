@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTxtFirstName"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <EditText
+        android:id="@+id/eTxtFirstName"
+        android:layout_width="149dp"
+        android:layout_height="42dp"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Enter First Name"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <EditText
+        android:id="@+id/eTxtLastName"
+        android:layout_width="149dp"
+        android:layout_height="45dp"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Enter Last Name"
+        android:textAllCaps="true"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:elevation="10dp"
+        android:text="Save Information"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="637dp" />
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Gender"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtView"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Button
+        android:layout_width="178dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/blue"
+        android:text="select profile picture"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="557dp" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Enter Birthday"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/eTxtLastName"
+        tools:layout_editor_absoluteX="129dp" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="Enter Username"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btmNav"
+        android:layout_width="413dp"
+        android:layout_height="44dp"
+        app:backgroundTint="@color/white"
+        app:menu="@menu/nav_menu"
+        app:labelVisibilityMode="unlabeled"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="688dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

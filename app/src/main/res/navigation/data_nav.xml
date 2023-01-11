@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/data_nav"
+    app:startDestination="@id/mainActivity2">
+
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.examropali.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/updateData"
+        android:name="com.examropali.data.UpdateData"
+        android:label="updatedata"
+        tools:layout="@layout/updatedata" />
+    <activity
+        android:id="@+id/readData"
+        android:name="com.examropali.data.ReadData"
+        android:label="ReadData" />
+</navigation>
